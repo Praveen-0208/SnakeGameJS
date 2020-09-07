@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(39, 30, 30);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1-container{
+      color:rgb(0,255,0);
+      padding: 5px 0 0 0 ;
+  }
+   span{
+    border-color: #fff;
+    border-style:solid;
+    border-width:2px;
+    padding :5px 10px ;
+  }
+  .score-container{
+    color:#fff;
+    font-size: 20px;
+    margin: 0 18px 20px 0;
+    padding: 0; 
+    font-weight: bold;
+  }
+  .level-container{
+    color:#fff;
+    font-size: 20px;
+    margin: 0 18px 0 0;
+    font-weight: bold;
+  }
+
+  /* canvas border */
+  #canvasParent{
+    border-color: #fff;
+    border-style:solid;
+    border-width:2px;
+    padding:22px;
+    height: 550px;
+    width: 550px;
+    align-items: center;
+  }
+  /*popup*/
+  .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+  
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:500px;
+    height:150px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+  
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:5px;
+    top:0px;
+    width:30px;
+    height:30px;
+    background:#fff;
+    color:#222;
+    font-size:35px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+  
+  .popup.active .overlay {
+    display:block;
+  }
+  
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+  .scoremsg{
+    font-size: 20px;
+    font-weight: bold;
+  }
